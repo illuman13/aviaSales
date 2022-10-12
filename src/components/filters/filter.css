@@ -1,0 +1,120 @@
+.filter {
+  font-family: "Open Sans Semibold", arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.filter {
+  flex: 2;
+  margin-right: 1.3rem;
+}
+.filter .contain {
+  display: flex;
+  margin-top: 1.2rem;
+  height: 3.13rem;
+}
+.filter .filter__list {
+  background-color: #fff;
+  padding: 20px 0 20px 0;
+  border-radius: 5px;
+  border: 1px solid #dfe5ec;
+}
+.filter .filter__label {
+  margin: 0 0 10px 20px;
+}
+.filter label {
+  display: block;
+  padding: 7px 10px 7px 20px;
+  line-height: 20px;
+}
+.filter label:hover {
+  background-color: #f1fcff;
+}
+
+@media (max-width: 600px) {
+  .filter {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .filter .filter__label {
+    margin-left: 0;
+    text-align: center;
+  }
+  .filter .contain {
+    display: none;
+  }
+}
+@media (min-width: 850px) {
+  .filter {
+    flex: 1;
+  }
+}
+input[type=checkbox]:checked,
+input[type=checkbox]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+input[type=checkbox]:checked + label,
+input[type=checkbox]:not(:checked) + label {
+  display: block;
+  position: relative;
+  padding-left: 48px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked + label:before,
+input[type=checkbox]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #dddddd;
+  background-color: #ffffff;
+}
+
+input[type=checkbox]:checked + label:before,
+input[type=checkbox]:not(:checked) + label:before {
+  border-radius: 2px;
+}
+
+input[type=checkbox]:checked + label:after,
+input[type=checkbox]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+input[type=checkbox]:checked + label:after,
+input[type=checkbox]:not(:checked) + label:after {
+  left: 24px;
+  top: 11px;
+  width: 10px;
+  height: 5px;
+  border-radius: 1px;
+  border-left: 2px solid #2196f3;
+  border-bottom: 2px solid #2196f3;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+input[type=checkbox]:not(:checked) + label:after {
+  opacity: 0;
+}
+
+input[type=checkbox]:checked + label:after {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=filter.css.map */

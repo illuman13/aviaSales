@@ -1,0 +1,40 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+.logo {
+  margin: 3.13rem 0;
+  display: flex;
+  justify-content: center;
+}
+.logo .logoImg {
+  width: 60px;
+  height: 60px;
+}
+
+.list {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+}
+.list .tabs {
+  flex: 3;
+}
+@media (min-width: 850px) {
+  .list {
+    width: 77%;
+  }
+  .list .tabs {
+    flex: 3;
+  }
+}
+@media (max-width: 600px) {
+  .list {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=app.module.css.map */

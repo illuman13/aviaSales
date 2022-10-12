@@ -1,0 +1,46 @@
+$bcWhite: #fff;
+$bcAll: #f1f1f1;
+$bcBlue: #2196f3;
+$cBorder: #dfe5ec;
+$cGray: #a0b0b9;
+%fntFml {
+  font-family: 'Open Sans Semibold', arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $bcAll;
+}
+.logo {
+  margin: 3.13rem 0;
+  display: flex;
+  justify-content: center;
+  .logoImg {
+    width: 60px;
+    height: 60px;
+  }
+}
+.list {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+
+  .tabs {
+    flex: 3;
+  }
+
+  @media (min-width: 850px) {
+    width: 77%;
+    .tabs {
+      flex: 3;
+    }
+  }
+  @media (max-width: 600px) {
+    display: block;
+  }
+}

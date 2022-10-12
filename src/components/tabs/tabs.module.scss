@@ -1,0 +1,44 @@
+$bcWhite: #fff;
+$bcAll: #f1f1f1;
+$bcBlue: #2196f3;
+$cBorder: #dfe5ec;
+$cGray: #a0b0b9;
+%fntFml {
+  font-family: 'Open Sans Semibold', arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.tabs__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  .tabs__item {
+    flex: 1;
+    &:nth-child(1) .tabs__button {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+    &:nth-child(3) .tabs__button {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    .tabs__button {
+      @extend %fntFml;
+      cursor: pointer;
+      background-color: $bcWhite;
+      border: 1px solid $cBorder;
+      width: 100%;
+      height: 3.13rem;
+      flex: 1;
+    }
+    .tabs__button__active {
+      background-color: $bcBlue;
+      color: $bcWhite;
+    }
+  }
+}
+

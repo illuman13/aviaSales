@@ -1,0 +1,71 @@
+$bcWhite: #fff;
+$bcAll: #f1f1f1;
+$bcBlue: #2196f3;
+$cBorder: #dfe5ec;
+$cGray: #a0b0b9;
+%fntFml {
+  font-family: 'Open Sans Semibold', arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 20px;
+}
+
+.tickets {
+  margin-top: 1.2rem;
+  padding: 1rem;
+  background-color: $bcWhite;
+  border: 1px solid $cBorder;
+  border-radius: 5px;
+  .tickets__price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    .price {
+      vertical-align: center;
+      margin: 0;
+      @extend %fntFml;
+      font-size: 19px;
+      line-height: 30px;
+      color: $bcBlue;
+    }
+    .s7 {
+      width: 85px;
+      height: 28px;
+    }
+  }
+  .tickets__description {
+    margin: 0.6rem 1.8rem 0 0;
+    @extend %fntFml;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.more {
+  display: flex;
+  margin-top: 1.2rem;
+  .more__button {
+    @extend %fntFml;
+    cursor: pointer;
+    background-color: $bcBlue;
+    color: $bcWhite;
+    border: 1px solid $cBorder;
+    border-radius: 5px;
+    width: 100%;
+    height: 3.13rem;
+    flex: 1;
+  }
+}
+.route {
+  color: $cGray;
+}
+.notFound {
+  @extend %fntFml;
+  width: 45%;
+  margin: 1rem auto;
+}
+@media (max-width: 600px) {
+  .tickets__description {
+    margin: 0.6rem 0 0 0;
+  }
+}
